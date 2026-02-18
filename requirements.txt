@@ -11,3 +11,4 @@ torchaudio==0.8.1
 torchvision==0.9.1
 wget==3.2
 zipp==3.4.1
+matplotlib-inline==0.1.2
