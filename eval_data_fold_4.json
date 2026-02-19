@@ -1,0 +1,304 @@
+{
+    "data": [
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_01-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_01-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_01-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_02-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_02-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_02-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_02-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_03-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_03-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_03-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_03-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_03-05.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_04-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_04-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_05-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_05-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_05-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_05-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_06-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_06-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_06-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_06-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_07-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_07-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_07-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_07-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_08-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_08-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_08-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_08-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_09-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_09-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_09-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_10-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_11-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_11-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_11-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_11-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_12-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_12-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_12-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\008_12-04.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_01-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_01-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_01-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_02-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_02-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_02-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_03-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_03-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_03-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_04-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_04-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_04-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_05-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_05-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_05-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_06-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_06-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_07-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_07-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_08-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_08-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_08-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_09-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_09-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_09-03.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_10-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_10-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_11-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_11-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_12-01.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_PTB\\016_12-02.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_Non-PTB\\003_01-04.wav",
+            "labels": "0"
+        },
+        {
+            "wav": "z:\\AST-With-TB-Classify\\Data\\Cough_Non-PTB\\003_01-06.wav",
+            "labels": "0"
+        }
+    ]
+}
