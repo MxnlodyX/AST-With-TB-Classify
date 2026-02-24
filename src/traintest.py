@@ -314,6 +314,7 @@ def validate(audio_model, val_loader, args, epoch):
         exp_dir = args.exp_dir
         if os.path.exists(exp_dir+'/predictions') == False:
             os.mkdir(exp_dir+'/predictions')
+        if not os.path.exists(exp_dir+'/predictions/target.csv'):
             np.savetxt(exp_dir+'/predictions/target.csv', target, delimiter=',')
         np.savetxt(exp_dir+'/predictions/predictions_' + str(epoch) + '.csv', audio_output, delimiter=',')
 

@@ -13,12 +13,21 @@ import dataloader
 
 # แก้ไข 1: เปลี่ยน target_length เป็น 100 สำหรับเสียง 1 วินาที
 # set skip_norm as True only when you are computing the normalization stats
-audio_conf = {'num_mel_bins': 128, 'target_length': 100, 'freqm': 24, 'timem': 192, 'mixup': 0.5, 'skip_norm': True, 'mode': 'train', 'dataset': 'audioset'}
-
+# ปรับตัวเลขให้เหมาะกับเสียง 1 วินาที (100 เฟรม)
+audio_conf = {
+    'num_mel_bins': 128, 
+    'target_length': 100,  # ความยาวเสียงไอของคุณ
+    'freqm': 48,           # เปลี่ยนจาก 24 เป็น 48 (ปิดแกนความถี่ 48 bins)
+    'timem': 20,           # ต้องลดลงจาก 192 เหลือ 20 (ประมาณ 20% ของ 100 เฟรม)
+    'mixup': 0.5, 
+    'skip_norm': True,     # คงไว้เป็น True เพื่อหาค่าสถิติ
+    'mode': 'train', 
+    'dataset': 'audioset'
+}
 # แก้ไข 2: เปลี่ยน Path เป็นไฟล์ของคุณ และลด batch_size/num_workers
 train_loader = torch.utils.data.DataLoader(
     dataloader.AudiosetDataset('train_data.json', label_csv='class_labels_indices.csv',
-                                audio_conf=audio_conf), batch_size=100, shuffle=False, num_workers=0, pin_memory=True)
+                                audio_conf=audio_conf), batch_size=8, shuffle=False, num_workers=0, pin_memory=True)
 
 mean=[]
 std=[]

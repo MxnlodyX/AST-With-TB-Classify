@@ -96,14 +96,25 @@ class AudiosetDataset(Dataset):
         print('number of classes is {:d}'.format(self.label_num))
 
     def _wav2fbank(self, filename, filename2=None):
+        # Target sample rate — AST was pretrained on AudioSet at 16 kHz.
+        # All audio is resampled to this rate before computing the filterbank.
+        TARGET_SR = 16000
+
+        def _load_and_resample(path):
+            waveform, sr = torchaudio.load(path)
+            if sr != TARGET_SR:
+                resampler = torchaudio.transforms.Resample(orig_freq=sr, new_freq=TARGET_SR)
+                waveform = resampler(waveform)
+            return waveform
+
         # mixup
         if filename2 == None:
-            waveform, sr = torchaudio.load(filename)
+            waveform = _load_and_resample(filename)
             waveform = waveform - waveform.mean()
         # mixup
         else:
-            waveform1, sr = torchaudio.load(filename)
-            waveform2, _ = torchaudio.load(filename2)
+            waveform1 = _load_and_resample(filename)
+            waveform2 = _load_and_resample(filename2)
 
             waveform1 = waveform1 - waveform1.mean()
             waveform2 = waveform2 - waveform2.mean()
@@ -126,7 +137,7 @@ class AudiosetDataset(Dataset):
             mix_waveform = mix_lambda * waveform1 + (1 - mix_lambda) * waveform2
             waveform = mix_waveform - mix_waveform.mean()
 
-        fbank = torchaudio.compliance.kaldi.fbank(waveform, htk_compat=True, sample_frequency=sr, use_energy=False,
+        fbank = torchaudio.compliance.kaldi.fbank(waveform, htk_compat=True, sample_frequency=TARGET_SR, use_energy=False,
                                                   window_type='hanning', num_mel_bins=self.melbins, dither=0.0, frame_shift=10)
 
         target_length = self.audio_conf.get('target_length')
