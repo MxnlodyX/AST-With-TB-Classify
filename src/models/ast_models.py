@@ -10,7 +10,13 @@ import torch.nn as nn
 from torch.cuda.amp import autocast
 import os
 import wget
-os.environ['TORCH_HOME'] = '../../pretrained_models'
+
+# Resolve pretrained directory from this file location, not current working directory.
+_THIS_DIR = os.path.dirname(os.path.abspath(__file__))
+_PROJECT_ROOT = os.path.abspath(os.path.join(_THIS_DIR, '..', '..'))
+_PRETRAINED_DIR = os.path.join(_PROJECT_ROOT, 'pretrained_models')
+os.makedirs(_PRETRAINED_DIR, exist_ok=True)
+os.environ['TORCH_HOME'] = _PRETRAINED_DIR
 import timm
 from timm.models.layers import to_2tuple,trunc_normal_
 
@@ -119,11 +125,12 @@ class ASTModel(nn.Module):
             if model_size != 'base384':
                 raise ValueError('currently only has base384 AudioSet pretrained model.')
             device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            if os.path.exists('../../pretrained_models/audioset_10_10_0.4593.pth') == False:
+            audioset_ckpt = os.path.join(_PRETRAINED_DIR, 'audioset_10_10_0.4593.pth')
+            if os.path.exists(audioset_ckpt) == False:
                 # this model performs 0.4593 mAP on the audioset eval set
                 audioset_mdl_url = 'https://www.dropbox.com/s/cv4knew8mvbrnvq/audioset_0.4593.pth?dl=1'
-                wget.download(audioset_mdl_url, out='../../pretrained_models/audioset_10_10_0.4593.pth')
-            sd = torch.load('../../pretrained_models/audioset_10_10_0.4593.pth', map_location=device)
+                wget.download(audioset_mdl_url, out=audioset_ckpt)
+            sd = torch.load(audioset_ckpt, map_location=device)
             audio_model = ASTModel(label_dim=527, fstride=10, tstride=10, input_fdim=128, input_tdim=1024, imagenet_pretrain=False, audioset_pretrain=False, model_size='base384', verbose=False)
             audio_model = torch.nn.DataParallel(audio_model)
             audio_model.load_state_dict(sd, strict=False)

@@ -17,6 +17,7 @@ import torch
 import torch.nn.functional
 from torch.utils.data import Dataset
 import random
+from scipy.io import wavfile
 
 def make_index_dict(label_csv):
     index_lookup = {}
@@ -101,7 +102,23 @@ class AudiosetDataset(Dataset):
         TARGET_SR = 16000
 
         def _load_and_resample(path):
-            waveform, sr = torchaudio.load(path)
+            try:
+                waveform, sr = torchaudio.load(path)
+            except RuntimeError as ex:
+                if 'No audio I/O backend is available' not in str(ex):
+                    raise
+                # Fallback for environments where torchaudio backends are unavailable.
+                sr, samples = wavfile.read(path)
+                if samples.ndim > 1:
+                    samples = samples.mean(axis=1)
+                if np.issubdtype(samples.dtype, np.integer):
+                    info = np.iinfo(samples.dtype)
+                    scale = float(max(abs(info.min), info.max))
+                    samples = samples.astype(np.float32) / scale
+                else:
+                    samples = samples.astype(np.float32)
+                waveform = torch.from_numpy(samples).unsqueeze(0)
+                sr = int(sr)
             if sr != TARGET_SR:
                 resampler = torchaudio.transforms.Resample(orig_freq=sr, new_freq=TARGET_SR)
                 waveform = resampler(waveform)
